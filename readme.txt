@@ -1,5 +1,5 @@
 === Quick Event Calendar ===
-Contributors: lumiblog, wpcorner
+Contributors: wpcorner, lumiblog
 Tags: event calendar, calendar, event, date, schedule
 Requires at least: 4.9
 Tested up to: 6.4.3
@@ -12,6 +12,16 @@ Quick Event Calendar is a very simple, performant and WordPress-integrated event
 
 == Description ==
 
+= New Adoption Notice =
+
+This plugin has been recently adopted by [WP Corner](https//:wpcorner.co). We are committed to ensuring its continued development, maintenance, and support. Any existing users can rest assured that the plugin is in good hands and will receive regular updates and improvements going forward.
+
+We would like to thank the previous developers for their hard work in creating and maintaining this plugin. We are excited to build upon their efforts and take this plugin to new heights.
+
+If you have any questions, concerns, or suggestions, please don't hesitate to reach out to us via the [Support 	Page](https://wordpress.org/support/plugin/quick-event-calendar/).
+
+Stay tuned for exciting updates and new features in the coming months!
+
 Quick Event Calendar is a very simple, performant and WordPress-integrated event calendar plugin. Quick Event Calendar allows you to add posts, events or any other custom post type to a flexible, responsive calendar which can be placed in a post, page or widget.
 
 The calendar works on one page only using AJAX loading. All events (or posts) in one month are displayed under the calendar. It is simple, fast, with no bloated styles and visual scripts. Use the included themes to style your calendar. Use the default or the minimal theme to match your current WordPress theme appearance.
@@ -19,8 +29,6 @@ The calendar works on one page only using AJAX loading. All events (or posts) in
 The calendar is feature-packed: works with custom posts, only needs one page, includes predefined themes and is responsive.
 
 Add your own event using the `[qcc-form]` shortcode and display all events using the `[qcc-calendar]` shortcode.
-
-[More WordPress plugins](https://getbutterfly.com/wordpress-plugins/ "More WordPress plugins")
 
 == Installation ==
 
@@ -57,6 +65,14 @@ In your Configurator tab, select the accent colour, the event colour and the bac
 When you are done with the settings, use the `[qcc-calendar]` shortcode in any post, page or widget to show the calendar.
 
 == Changelog ==
+
+= 1.4.5 =
+* UPDATE: Updated readme.txt and plugin info in the main plugin file
+* TODO: Add WPML compatibility
+* TODO: Compare JS to https://github.com/fdut/ContactDevOps/blob/22dd6f38bbd591aeb3a5e5653cf2cdcb066ca146/contact-web/ContactWeb/client/js/transports/calendarController.js
+* TODO: Refactor JS to ES6
+* TODO: Test form submission and add demo page
+* TODO: Reconsider custom date field
 
 = 1.4.4 =
 * TODO: Compare JS to https://github.com/fdut/ContactDevOps/blob/22dd6f38bbd591aeb3a5e5653cf2cdcb066ca146/contact-web/ContactWeb/client/js/transports/calendarController.js
