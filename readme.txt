@@ -1,5 +1,6 @@
 === Quick Event Calendar ===
 Contributors: wpcorner, lumiblog
+Donate Link: https://wpcorner.co/donate/
 Tags: event calendar, calendar, event, date, schedule
 Requires at least: 4.9
 Tested up to: 6.4.3
@@ -8,61 +9,136 @@ Stable tag: 1.4.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Quick Event Calendar is a very simple, performant and WordPress-integrated event calendar plugin.
+Quick Event Calendar is a very simple, performant, and WordPress-integrated event calendar plugin.
 
 == Description ==
 
-= New Adoption Notice =
+### Quick Event Calendar - Simple, fancy event calendar. ###
 
-This plugin has been recently adopted by [WP Corner](https//:wpcorner.co). We are committed to ensuring its continued development, maintenance, and support. Any existing users can rest assured that the plugin is in good hands and will receive regular updates and improvements going forward.
+â˜…â˜…â˜…â˜…â˜…<br>
 
-We would like to thank the previous developers for their hard work in creating and maintaining this plugin. We are excited to build upon their efforts and take this plugin to new heights.
+**Quick Event Calendar** is a very simple, performant, and WordPress-integrated event calendar plugin. Quick Event Calendar allows you to add **posts**, **events** or any other **custom post type** to a flexible, responsive calendar which can be placed in a post, page or widget.
 
-If you have any questions, concerns, or suggestions, please don't hesitate to reach out to us via the [Support 	Page](https://wordpress.org/support/plugin/quick-event-calendar/).
+The calendar works on one page only using AJAX loading. All events (or posts) in one month are displayed under the calendar. 
 
-Stay tuned for exciting updates and new features in the coming months!
-
-Quick Event Calendar is a very simple, performant and WordPress-integrated event calendar plugin. Quick Event Calendar allows you to add posts, events or any other custom post type to a flexible, responsive calendar which can be placed in a post, page or widget.
-
-The calendar works on one page only using AJAX loading. All events (or posts) in one month are displayed under the calendar. It is simple, fast, with no bloated styles and visual scripts. Use the included themes to style your calendar. Use the default or the minimal theme to match your current WordPress theme appearance.
+It is simple, and fast, with no bloated styles and visual scripts. Use the included themes to style your calendar. Use the default or the minimal theme to match your current WordPress theme appearance.
 
 The calendar is feature-packed: works with custom posts, only needs one page, includes predefined themes and is responsive.
 
 Add your own event using the `[qcc-form]` shortcode and display all events using the `[qcc-calendar]` shortcode.
 
-== Installation ==
+### Quick Event Calendar plugin can be used by: ###
 
-1. Upload the `qcc-calendar` folder to your `/wp-content/plugins/` directory
-2. Activate the plugin via the Plugins menu in WordPress
-3. A new Quick Event Calendar menu will appear in WordPress Settings with options and general help
+* **Website Owners / Administrators: Anyone who runs a WordPress website can use this plugin to display events or custom post types in a calendar format on their site.
 
-= Help with shortcodes =
+* **Event Organizers**: Individuals or organizations that host events can utilize this plugin to create an event calendar on their WordPress website, allowing visitors to easily view and potentially submit events.
 
-Use the `[qcc-calendar]` shortcode in any post, page or widget to show the calendar.
-Use the `[qcc-form]` shortcode in any post, page or widget to show the calendar submission form.
+* **Bloggers / Content Creators**: If you have a blog or website where you regularly publish content organized by date (e.g., posts, articles, news), you can use Quick Event Calendar to display this content in a calendar format.
 
-= Help with template tags =
+* **Business Owners**: Small businesses, especially those in industries like hospitality, retail, or services, can use this plugin to showcase their events, promotions, or special offers in a visually appealing calendar layout.
 
-Use the `<?php echo do_shortcode("[qcc-calendar]"); ?>` code in any page template to show the calendar.
-Use the `<?php echo do_shortcode("[qcc-form]"); ?>` code in any page template to show the calendar submission form.
+* **Community Organizations**: Non-profit organizations, clubs, schools, or local communities can benefit from Quick Event Calendar to publicize their upcoming events, meetings, or activities on their WordPress website.
 
-= Help with styling =
+* **Personal Websites / Blogs**: Individuals running personal websites or blogs can use this plugin to display their schedule, milestones, or any date-based content in a calendar format.
+
+### Key Features ###
+
+See the features which are exclusive to the Quick Event Calendar plugin and understand why Quick Event Calendar is possibly the **Best Event Calendar Plugin for WordPress**.
+
+* **Simple and Performant**: Quick Event Calendar is designed to be fast and lightweight, with no bloated styles or visual scripts, ensuring optimal performance.
+
+* **AJAX Loading**: The calendar works on a single page, utilizing AJAX to load events for a specific month, providing a smooth and efficient user experience.
+
+* **Custom Post Type Integration**: Display events from any custom post type, giving you the flexibility to organize and showcase your content as desired.
+
+* **Responsive Design**: The calendar is fully responsive, ensuring a seamless experience across different devices and screen sizes.
+
+* **Predefined Themes**: Quick Event Calendar includes predefined themes, allowing you to easily style your calendar to match your WordPress theme's appearance.
+
+* **Customizable Colors**: Tailor the calendar's appearance by selecting accent colors, event colors, and background colors to match your site's branding.
+
+### How to Use Quick Event Calendar ###
+
+* **Install and Activate**: Install and activate the Quick Event Calendar plugin from the WordPress plugin repository.
+
+* **Configure Settings**: Navigate to the plugin settings and configure the desired options, such as selecting the post type, category (if applicable), and choosing which posts to display **(published, scheduled, or future)**.
+
+* **Add Events**: Use the `[qcc-form]` shortcode to display the calendar submission form on any post, page, or widget, allowing users to add new events.
+
+* **Display the Calendar**: Use the `[qcc-calendar]` shortcode on any post, page, or widget to display the calendar with the selected events.
+
+* **Customize Appearance**: Select one of the predefined themes and match the calendar's colors with your site's branding by adjusting the accent color, event color, and background color for the current day.
+
+### Help with shortcodes ###
+
+* Use the `[qcc-calendar]` shortcode in any post, page or widget to show the calendar.
+
+* Use the `[qcc-form]` shortcode in any post, page or widget to show the calendar submission form.
+
+### Help with template tags ###
+
+* Use the `<?php echo do_shortcode("[qcc-calendar]"); ?>` code in any page template to show the **calendar**.
+
+* Use the `<?php echo do_shortcode("[qcc-form]"); ?>` code in any page template to show the **calendar submission form**.
+
+### Help with styling ###
 
 Use the included themes to style your calendar. Use the default or the minimal theme to match your current WordPress theme appearance.
 
-After installing the plugin, you need to configure it by selecting several options:
+**After installing the plugin, you need to configure it by selecting several options:**
 
-Select the desired post type, select the desired category (if post type is 'post') and select which posts you want to show. For an event calendar, the default should be both published and scheduled/future posts.
+* Select the desired post type, the desired category (if post type is ‘post’) and which posts you want to show. For an event calendar, the default should be both published and scheduled/future posts.
 
-In case you want to use custom meta fields, the calendar works with preexisting meta fields. Using custom meta fields requires a third-party plugin to add new fields.
+* In case you want to use custom meta fields, the calendar works with preexisting meta fields. Using custom meta fields requires a third-party plugin to add new fields.
 
-After selecting the desired options, pick one of the predefined themes to match your site.
+* After selecting the desired options, pick one of the predefined themes to match your site.
 
-After selecting a theme, you need to match your site's colours with the calendar template.
+* After selecting a theme, you need to match your site’s colours with the calendar template.
 
-In your Configurator tab, select the accent colour, the event colour and the background colour for the current day.
+* In your **Configurator** tab, select the accent colour, the event colour and the background colour for the current day.
 
 When you are done with the settings, use the `[qcc-calendar]` shortcode in any post, page or widget to show the calendar.
+
+== Installation ==
+
+1. Go to the WordPress admin dashboard
+3. Navigate to `Plugins` > `Add New`
+4. Search for Quick Event Calendar
+5. Click `Install Now`
+6. Activate the plugin
+
+== Frequently Asked Questions ==
+
+= Is the calendar responsive? =
+
+Yes, Quick Event Calendar is fully responsive and will adapt to different screen sizes and devices, ensuring a seamless user experience.
+
+= Can I display the calendar on multiple pages? =
+
+Quick Event Calendar is designed to work on a single page, utilizing AJAX to load events for a specific month. If you need to display the calendar on multiple pages, you can use the provided **shortcodes** or **template tags** on those pages.
+
+= Can I use custom meta fields with Quick Event Calendar? =
+
+Yes, Quick Event Calendar works with preexisting custom meta fields. However, you may need to use a third-party plugin to add new custom fields.
+
+= How do I style the calendar to match my WordPress theme? = 
+
+Quick Event Calendar includes predefined themes that you can select from the plugin settings. Additionally, you can customize the calendar's colors to match your site's branding.
+
+= Can I display events from custom post types? =
+
+Yes, Quick Event Calendar allows you to display events or any other custom post type in the calendar.
+
+= How do I get support? =
+
+If you encounter any issues or have questions regarding Quick Event Calendar, please visit [the plugin’s support forum](https://wordpress.org/support/plugin/quick-event-calendar/) or [contact us](mailto:support@wpcorner.co) for assistance.
+
+== Screenshots ==
+
+1. 
+2. 
+3. 
+4.
 
 == Changelog ==
 
