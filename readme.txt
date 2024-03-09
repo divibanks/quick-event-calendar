@@ -135,10 +135,10 @@ If you encounter any issues or have questions regarding Quick Event Calendar, pl
 
 == Screenshots ==
 
-1. 
-2. 
-3. 
-4.
+1. Quick Event Calendar `Settings` tab
+2. Quick Event Calendar `Configurator` tab
+3. Event submission form
+4. Calendar showing events on a live page
 
 == Changelog ==
 
