@@ -85,7 +85,7 @@
 .qcc-form input[type="submit"],
 .qcc-form input[type="datetime"],
 .qcc-form textarea {
-    max-width: 100%;
+    width: 100%;
     font-family: inherit;
     font-size: inherit;
     padding: 8px;
@@ -93,10 +93,11 @@
     border-radius: 3px;
 }
 .qcc-form input[type="submit"] {
-    padding: 8px 16px;
+    padding: 8px 8px;
+    width: 100%;
 }
 .qcc-form input[type="submit"]:hover {
-    padding: 8px 16px;
+    padding: 8px;
     border: 1px solid gray;
 }
 .qcc-form fieldset {
