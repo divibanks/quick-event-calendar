@@ -150,13 +150,13 @@ function qcc_get_submission_form( $atts ) {
 
         // ADD THE FORM INPUT TO $new_post ARRAY
         $new_post = [
-            'post_title' 	=> $qcc_title,
-            'post_name' 	=> $qcc_title_slug,
-            'post_content' 	=> $qcc_description,
-            'post_category'	=> [$qcc_category], // Usable for custom taxonomies too
-            'post_status' 	=> 'publish', // Choose: publish, preview, future, draft, etc.
-            'post_type' 	=> $qcc_post_type,
-            'post_date' 	=> $qcc_date . ' 12:00:00',
+            'post_title'    => $qcc_title,
+            'post_name'     => $qcc_title_slug,
+            'post_content'  => $qcc_description,
+            'tax_input'     => ['category' => [$qcc_category]],
+            'post_status'   => 'publish', // Choose: publish, preview, future, draft, etc.
+            'post_type'     => $qcc_post_type,
+            'post_date'     => $qcc_date . ' 12:00:00',
         ];
 
         // SAVE THE POST
@@ -181,7 +181,7 @@ function qcc_get_submission_form( $atts ) {
         </p>
 
         <p>
-            <input id="submit" name="qcc_new_event_submit" type="submit" value="' . __('Add', 'qcc') . '">
+            <input id="submit" name="qcc_new_event_submit" type="submit" value="' . __('Add Event', 'qcc') . '">
         </p>
         ' . wp_nonce_field('qcc_new_event_action', 'qcc_new_event_field', true, false) . '
     </form>';
