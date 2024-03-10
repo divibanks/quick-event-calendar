@@ -26,8 +26,11 @@ function qcc_calendar_admin_page() {
             <div class="gb-ad" id="gb-ad">
                 <h3 class="gb-ad--header"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68"><defs/><rect width="100%" height="100%" fill="none"/><g class="currentLayer"><path fill="#fff" d="M34.76 33C22.85 21.1 20.1 13.33 28.23 5.2 36.37-2.95 46.74.01 50.53 3.8c3.8 3.8 5.14 17.94-5.04 28.12-2.95 2.95-5.97 5.84-5.97 5.84L34.76 33"/><path fill="#fff" d="M43.98 42.21c5.54 5.55 14.59 11.06 20.35 5.3 5.76-5.77 3.67-13.1.98-15.79-2.68-2.68-10.87-5.25-18.07 1.96-2.95 2.95-5.96 5.84-5.96 5.84l2.7 2.7m-1.76 1.75c5.55 5.54 11.06 14.59 5.3 20.35-5.77 5.76-13.1 3.67-15.79.98-2.69-2.68-5.25-10.87 1.95-18.07 2.85-2.84 5.84-5.96 5.84-5.96l2.7 2.7" class="selected"/><path fill="#fff" d="M33 34.75c-11.9-11.9-19.67-14.67-27.8-6.52-8.15 8.14-5.2 18.5-1.4 22.3 3.8 3.79 17.95 5.13 28.13-5.05 3.1-3.11 5.84-5.97 5.84-5.97L33 34.75"/></g></svg> Thank you for using Quick Event Calendar!</h3>
                 <div class="gb-ad--content">
-                    <p>If you enjoy this plugin, do not forget to <a href="https://wordpress.org/support/plugin/quick-event-calendar/reviews/?filter=5" rel="external">rate it</a>! We work hard to update it, fix bugs, add new features and make it compatible with the latest web technologies.</p>
-                    <p>Have checked out our <a href="https://wpcorner.co">blog</a>? We share lots and lots of WordPress tips, tutorials and so much more. Be sure to visit <a href="https://wpcorner.co">our blog</a>.</p>
+                    <p>This plugin has been recently adopted by <a href="https://wpcorner.co" rel="external">WP Corner</a>. We are committed to ensuring<br> its continued development, maintenance, and support. Any existing users can rest assured <br>that the plugin is in good hands and will receive regular updates and improvements going forward.</p>
+<p>We would like to thank the previous developer for their hard work in creating and maintaining<br> this plugin. We are excited to build upon their efforts and take this plugin to new heights.</p>
+<p>If you encounter any issues or have questions regarding Quick Event Calendar, please visit the<br> <a href="https://wordpress.org/support/plugin/quick-event-calendar/" rel="external">plugin’s support forum</a> or <a href=”https://wpcorner.co/contact”>contact us</a> for assistance.</p>
+<p>Stay tuned for exciting updates and new features in the coming months.</p>
+
                 </div>
                 <div class="gb-ad--footer">
                     <p>For support, feature requests and bug reporting, please visit the <a href="hhttps://github.com/wpcorner/quick-event-calendar/issues" rel="external">plugin's Github Repository</a> to open an issue.<br>Built by <a href="https://wpcorner.co" rel="external"><strong>WP Corner</strong>.com</a> &middot; <a href="https://wpcorner.co/support/quick-event-calendar/">Documentation</a> &middot; <small>Code wrangling since 2005</small></p>
@@ -39,11 +42,7 @@ function qcc_calendar_admin_page() {
             </div>
 
             <?php
-            echo '<h2>Dashboard (Help and General Usage)</h2>
-
-            <p>Thank you for using <strong>Quick Event Calendar</strong>, a very simple, performant and WordPress-integrated event calendar plugin. <strong>Quick Event Calendar</strong> allows you to add posts, events or any other custom post type to a flexible, responsive calendar which can be placed in a post, page or widget.</p>
-            <p>
-                <small>You are using Quick Event Calendar plugin version <strong>' . QEC_VERSION . '</strong>.</small>
+            echo '<small>You are using Quick Event Calendar plugin version <strong>' . QEC_VERSION . '</strong>.</small>
             </p>';
 		} else if($t == 'configurator_tab') {
             if(isset($_POST['isQCCSubmit'])) {
