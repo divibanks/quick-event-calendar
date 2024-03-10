@@ -15,8 +15,6 @@ Quick Event Calendar is a very simple, performant, and WordPress-integrated even
 
 ### Quick Event Calendar - Simple, fancy event calendar. ###
 
-â˜…â˜…â˜…â˜…â˜…<br>
-
 **Quick Event Calendar** is a very simple, performant, and WordPress-integrated event calendar plugin. Quick Event Calendar allows you to add **posts**, **events** or any other **custom post type** to a flexible, responsive calendar which can be placed in a post, page or widget.
 
 The calendar works on one page only using AJAX loading. All events (or posts) in one month are displayed under the calendar. 
