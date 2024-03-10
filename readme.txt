@@ -4,7 +4,7 @@ Donate Link: https://wpcorner.co/donate/
 Tags: event calendar, calendar, event, date, schedule
 Requires at least: 4.9
 Tested up to: 6.4.3
-Requires PHP: 7.0
+Requires PHP: 7.0 or later
 Stable tag: 1.4.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
