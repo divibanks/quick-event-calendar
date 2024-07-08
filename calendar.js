@@ -3,17 +3,16 @@ var calendar = {
         /**
          * Set week days and get current date
          */
-        var mon = 'Mon',
+        var sun = 'Sun',
+            mon = 'Mon',
             tue = 'Tue',
             wed = 'Wed',
             thu = 'Thu',
             fri = 'Fri',
-            sat = 'Sat',
-            sun = 'Sun';
+            sat = 'Sat';
 
         var d = new Date();
 
-        //var strDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
         var yearNumber = (new Date).getFullYear();
         var strDate = yearNumber + "/" + (d.getMonth() + 1) + "/" + d.getDate();
 
@@ -27,37 +26,37 @@ var calendar = {
             return months[monthNumber - 1];
         }
 
-        function setMonth(monthNumber, mon, tue, wed, thu, fri, sat, sun) {
+        function setMonth(monthNumber, sun, mon, tue, wed, thu, fri, sat) {
             jQuery('.month').text(GetMonthName(monthNumber) + ' ' + yearNumber);
             jQuery('.month').attr('data-month', monthNumber);
-            printDateNumber(monthNumber, mon, tue, wed, thu, fri, sat, sun);
+            printDateNumber(monthNumber, sun, mon, tue, wed, thu, fri, sat);
         }
 
-        setMonth(monthNumber, mon, tue, wed, thu, fri, sat, sun);
+        setMonth(monthNumber, sun, mon, tue, wed, thu, fri, sat);
 
         jQuery('.qcc-btn-next').on('click', function (e) {
-            var monthNumber = jQuery('.month').attr('data-month');
+            var monthNumber = parseInt(jQuery('.month').attr('data-month'));
             if (monthNumber > 11) {
-                jQuery('.month').attr('data-month', '0');
-                var monthNumber = jQuery('.month').attr('data-month');
-                yearNumber = yearNumber + 1;
-                setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thu, fri, sat, sun);
+                monthNumber = 1;
+                yearNumber++;
             } else {
-                setMonth(parseInt(monthNumber) + 1, mon, tue, wed, thu, fri, sat, sun);
+                monthNumber++;
             }
+            jQuery('.month').attr('data-month', monthNumber);
+            setMonth(monthNumber, sun, mon, tue, wed, thu, fri, sat);
             e.preventDefault();
         });
 
         jQuery('.qcc-btn-prev').on('click', function (e) {
-            var monthNumber = jQuery('.month').attr('data-month');
+            var monthNumber = parseInt(jQuery('.month').attr('data-month'));
             if (monthNumber < 2) {
-                jQuery('.month').attr('data-month', '13');
-                var monthNumber = jQuery('.month').attr('data-month');
-                yearNumber = yearNumber - 1;
-                setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thu, fri, sat, sun);
+                monthNumber = 12;
+                yearNumber--;
             } else {
-                setMonth(parseInt(monthNumber) - 1, mon, tue, wed, thu, fri, sat, sun);
-            };
+                monthNumber--;
+            }
+            jQuery('.month').attr('data-month', monthNumber);
+            setMonth(monthNumber, sun, mon, tue, wed, thu, fri, sat);
             e.preventDefault();
         });
 
@@ -65,69 +64,44 @@ var calendar = {
          * Get all dates for current month
          */
 
-        function printDateNumber(monthNumber, mon, tue, wed, thu, fri, sat, sun) {
-            jQuery(jQuery('.qcc-calendar-container tbody tr')).each(function(index) {
+        function setDaysInOrder(sun, mon, tue, wed, thu, fri, sat) {
+            jQuery('.qcc-calendar-container thead tr').append(
+                '<td>' + sun + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thu + '</td><td>' + fri + '</td><td>' + sat + '</td>'
+            );
+        }
+
+        function printDateNumber(monthNumber, sun, mon, tue, wed, thu, fri, sat) {
+            jQuery('.qcc-calendar-container tbody tr').each(function() {
                 jQuery(this).empty();
             });
 
-            jQuery(jQuery('.qcc-calendar-container thead tr')).each(function(index) {
-                jQuery(this).empty();
-            });
+            jQuery('.qcc-calendar-container thead tr').empty();
 
-            function getDaysInMonth(month, year) {
-                // Since no month has fewer than 28 days
-                var date = new Date(year, month, 1);
-                var days = [];
-                while (date.getMonth() === month) {
-                    days.push(new Date(date));
-                    date.setDate(date.getDate() + 1);
-                }
-                return days;
-            }
+            setDaysInOrder(sun, mon, tue, wed, thu, fri, sat);
 
-            i = 0;
+            var firstDay = new Date(yearNumber, monthNumber - 1, 1);
+            var startingDay = firstDay.getDay(); // 0 (Sunday) to 6 (Saturday)
+            var monthLength = new Date(yearNumber, monthNumber, 0).getDate();
 
-            setDaysInOrder(mon, tue, wed, thu, fri, sat, sun);
+            var day = 1;
+            var rows = Math.ceil((startingDay + monthLength) / 7);
 
-            function setDaysInOrder(mon, tue, wed, thu, fri, sat, sun) {
-                var monthDay = getDaysInMonth(monthNumber - 1, yearNumber)[0].toString().substring(0, 3);
-                if (monthDay === 'Mon') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thu + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sun + '</td>');
-                } else if (monthDay === 'Tue') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + tue + '</td><td>' + wed + '</td><td>' + thu + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sun + '</td><td>' + mon + '</td>');
-                } else if (monthDay === 'Wed') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + wed + '</td><td>' + thu + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sun + '</td><td>' + mon + '</td><td>' + tue + '</td>');
-                } else if (monthDay === 'Thu') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + thu + '</td><td>' + fri + '</td><td>' + sat + '</td><td>' + sun + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td>');
-                } else if (monthDay === 'Fri') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + fri + '</td><td>' + sat + '</td><td>' + sun + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thu + '</td>');
-                } else if (monthDay === 'Sat') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + sat + '</td><td>' + sun + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thu + '</td><td>' + fri + '</td>');
-                } else if (monthDay === 'Sun') {
-                    jQuery('.qcc-calendar-container thead tr').append('<td>' + sun + '</td><td>' + mon + '</td><td>' + tue + '</td><td>' + wed + '</td><td>' + thu + '</td><td>' + fri + '</td><td>' + sat + '</td>');
+            for (var i = 0; i < rows; i++) {
+                var row = jQuery('.qcc-calendar-container tbody tr').eq(i);
+                for (var j = 0; j < 7; j++) {
+                    if (i === 0 && j < startingDay) {
+                        row.append('<td></td>');
+                    } else if (day > monthLength) {
+                        break;
+                    } else {
+                        let dataset_timestamp = `${yearNumber}-${monthNumber}-${day}`;
+                        row.append('<td data-timestamp="' + dataset_timestamp + '" date-year="' + yearNumber + '" date-month="' + monthNumber + '" date-day="' + day + '">' + day + '</td>');
+                        day++;
+                    }
                 }
             }
-            jQuery(getDaysInMonth(monthNumber - 1, yearNumber)).each(function (index) {
-                var index = index + 1;
 
-                let dataset_timestamp = `${yearNumber}-${monthNumber}-${index}`;
-
-                if (index < 8) {
-                    jQuery('.qcc-calendar-container tbody tr.1').append('<td data-timestamp="' + dataset_timestamp + '" date-year="' + yearNumber + '" date-month="' + monthNumber + '" date-day="' + index + '">' + index + '</td>');
-                } else if (index < 15) {
-                    jQuery('.qcc-calendar-container tbody tr.2').append('<td data-timestamp="' + dataset_timestamp + '" date-year="' + yearNumber + '" date-month="' + monthNumber + '" date-day="' + index + '">' + index + '</td>');
-                } else if (index < 22) {
-                    jQuery('.qcc-calendar-container tbody tr.3').append('<td data-timestamp="' + dataset_timestamp + '" date-year="' + yearNumber + '" date-month="' + monthNumber + '" date-day="' + index + '">' + index + '</td>');
-                } else if (index < 29) {
-                    jQuery('.qcc-calendar-container tbody tr.4').append('<td data-timestamp="' + dataset_timestamp + '" date-year="' + yearNumber + '" date-month="' + monthNumber + '" date-day="' + index + '">' + index + '</td>');
-                } else if (index < 32) {
-                    jQuery('.qcc-calendar-container tbody tr.5').append('<td data-timestamp="' + dataset_timestamp + '" date-year="' + yearNumber + '" date-month="' + monthNumber + '" date-day="' + index + '">' + index + '</td>');
-                }
-                i++;
-            });
-            var date = new Date();
-            var month = date.getMonth() + 1;
-            setCurrentDay(month);
+            setCurrentDay(d.getMonth() + 1);
             setEvent();
             displayEvent();
         }
@@ -145,7 +119,7 @@ var calendar = {
         /**
          * Add class '.active' on calendar date
          */
-        jQuery('.qcc-calendar-container tbody td').on('click', function (e) {
+        jQuery('.qcc-calendar-container tbody').on('click', 'td', function (e) {
             if (jQuery(this).hasClass('qcc-event')) {
                 jQuery('.qcc-calendar-container tbody td').removeClass('active');
                 jQuery(this).addClass('active');
@@ -175,7 +149,7 @@ var calendar = {
          * and find day-event to display
          */
         function displayEvent() {
-            jQuery('.qcc-calendar-container tbody td').on('click', function (e) {
+            jQuery('.qcc-calendar-container tbody').on('click', 'td', function (e) {
                 jQuery('.qcc-day-event').slideUp('fast');
                 var monthEvent = jQuery(this).attr('date-month'),
                     yearEvent = jQuery(this).attr('date-year'),
