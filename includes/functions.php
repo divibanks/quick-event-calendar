@@ -141,6 +141,8 @@ function qcc_get_submission_form( $atts ) {
 
     $qcc_post_type = get_option('qcc_post_type');
     $qcc_category = get_option('qcc_category');
+    
+    $notification = '';
 
     if (isset($_POST['qcc_new_event_submit']) && wp_verify_nonce($_POST['qcc_new_event_field'], 'qcc_new_event_action')) {
         $qcc_title = sanitize_text_field($_POST['qcc_title']);
@@ -164,10 +166,10 @@ function qcc_get_submission_form( $atts ) {
 
         do_action('wp_insert_post', 'wp_insert_post');
 
-        echo '<p>' . __('Event submitted successfully!', 'qcc') . '</p>';
+        $notification = '<div style="background-color: #e6f3ff; color: #000; padding: 10px; margin-bottom: 20px; border-radius: 5px;">' . __('Event submitted successfully!', 'qcc') . '</div>';
     }
 
-    $display = '<form method="post" class="qcc-form">
+    $display = $notification . '<form method="post" class="qcc-form">
         <p>
             <input type="text" size="48" name="qcc_date" id="qcc-datepicker" placeholder="' . __('Date', 'qcc') . '" required>
         </p>
