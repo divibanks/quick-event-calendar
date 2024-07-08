@@ -1,7 +1,7 @@
 /**
  * Ad Box UI
  */
-.gb-ad {
+ .gb-ad {
     color: #ffffff;
     background-color: #32374B;
     border-radius: 2px;
@@ -9,18 +9,25 @@
     margin: 16px 0;
     font-size: 19px;
 }
+
+.p {
+    color:#1d2327;
+    font-size: 16;
+    line-height: 1.7em;
+}
+
 .gb-ad svg {
     height: 34px;
     vertical-align: text-bottom;
 }
-.gb-ad h3.gb-ad--header {
-    color: #ffffff;
-    font-size: 1.90em;
-    font-weight: 400;
+.gb-h {
+    color: #1d2327;
+    font-size: 26px;
+    font-weight: 500;
     line-height: 1.75;
-    margin: 8px 0;
-    padding: 16px 24px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 10px 0;
+    padding: 4px 4px;
+    border-bottom: 1px solid #1d2327;
 }
 .gb-ad .gb-ad--content {
     padding: 16px 24px;
@@ -104,14 +111,4 @@ input[type="checkbox"].wppd-ui-toggle:checked:after {
 input[type="checkbox"].wppd-ui-toggle:checked:after {
     content: 'ON';
     background-color: #2271b1;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.75;
-}
-
-a {
-
-    color: #E23F36;
 }
