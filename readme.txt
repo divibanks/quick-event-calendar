@@ -3,9 +3,9 @@ Contributors: wpcorner, lumiblog
 Donate Link: https://wpcorner.co/donate/
 Tags: event calendar, calendar, event, date, schedule
 Requires at least: 4.9
-Tested up to: 6.4.3
+Tested up to: 6.6
 Requires PHP: 7.0 or later
-Stable tag: 1.4.4
+Stable tag: 1.4.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -139,6 +139,9 @@ If you encounter any issues or have questions regarding Quick Event Calendar, pl
 4. Calendar showing events on a live page
 
 == Changelog ==
+
+= 1.4.6 =
+* UPDATE: Updated WordPress compatibility
 
 = 1.4.5 =
 * UPDATE: Updated readme.txt and plugin info in the main plugin file
