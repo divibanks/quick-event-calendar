@@ -5,7 +5,7 @@ Tags: event calendar, calendar, event, date, schedule
 Requires at least: 4.9
 Tested up to: 6.6
 Requires PHP: 7.0 or later
-Stable tag: 1.4.6
+Stable tag: 1.4.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -139,6 +139,9 @@ If you encounter any issues or have questions regarding Quick Event Calendar, pl
 4. Calendar showing events on a live page
 
 == Changelog ==
+
+= 1.4.7 =
+* UPDATE: Updated WordPress compatibility
 
 = 1.4.6 =
 * UPDATE: Updated WordPress compatibility
