@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 //
 define( 'QEC_PLUGIN_URL', WP_PLUGIN_URL . '/' . dirname( plugin_basename( __FILE__ ) ) );
 define( 'QEC_PLUGIN_PATH', WP_PLUGIN_DIR . '/' . dirname( plugin_basename( __FILE__ ) ) );
-define( 'QEC_VERSION', '1.4.3' );
+define( 'QEC_VERSION', '1.4.8' );
 
 add_shortcode( 'qcc-calendar', 'qcc_get_calendar' );
 add_shortcode( 'qcc-form', 'qcc_get_submission_form' );
