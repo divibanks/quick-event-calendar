@@ -57,6 +57,8 @@ See the features which are exclusive to the Quick Event Calendar plugin and unde
 
 ### How to Use Quick Event Calendar ###
 
+[vimeo https://vimeo.com/981290390]
+
 * **Install and Activate**: Install and activate the Quick Event Calendar plugin from the WordPress plugin repository.
 
 * **Configure Settings**: Navigate to the plugin settings and configure the desired options, such as selecting the post type, category (if applicable), and choosing which posts to display **(published, scheduled, or future)**.
