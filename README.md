@@ -60,7 +60,7 @@ Bug reports are best made via the [plugin’s GitHub Issues tracker page](https:
 
 - [Patrick Lumumba](https://github.com/lumumbapl)
 
-Contributions are welcomed. [Please review the guidelines for contributing to Footnotes Made Easy](https://github.com/wpcorner/quick-event-calendar/blob/main/CONTRIBUTING.md) before submitting a pull request on GitHub.
+Contributions are welcomed. [Please review the guidelines for contributing to Quick Event Calendar](https://github.com/wpcorner/quick-event-calendar/blob/main/CONTRIBUTING.md) before submitting a pull request on GitHub.
 
 
 
