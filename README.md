@@ -1,4 +1,4 @@
-# Quick Event Plugin
+# Quick Event Calendar
 
 A simple, fancy event calendar.
 
