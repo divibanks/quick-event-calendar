@@ -44,7 +44,23 @@ See the features  which are exclusive to the Quick Event Calendar plugin and und
 * Click `Install Now`
 * `Activate` the plugin
 
+## Documentation
 
+For the plugin's documentation, [check this page out](https://github.com/wpcorner/quick-event-calendar/wiki/Documentation). 
+
+## Bug Reports
+
+Bug reports are best made via the [plugin’s GitHub Issues tracker page](https://github.com/wpcorner/quick-event-calendar/issues).
+
+## Maintainers
+
+- [Patrick Lumumba](https://github.com/lumumbapl)
+
+## Contributors
+
+- [Patrick Lumumba](https://github.com/lumumbapl)
+
+Contributions are welcomed. [Please review the guidelines for contributing to Footnotes Made Easy](https://github.com/wpcorner/quick-event-calendar/blob/main/CONTRIBUTING.md) before submitting a pull request on GitHub.
 
 
 
