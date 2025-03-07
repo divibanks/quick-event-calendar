@@ -1,11 +1,11 @@
 === Quick Event Calendar ===
-Contributors: wpcorner, lumiblog
-Donate Link: https://wpcorner.co/donate/
+Contributors: lumiblog, divibanks
+Donate Link: https://divibanks.io/sponsor/
 Tags: event calendar, calendar, event, date, schedule
 Requires at least: 4.9
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.0 
-Stable tag: 1.4.8
+Stable tag: 1.4.9
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -141,6 +141,10 @@ If you encounter any issues or have questions regarding Quick Event Calendar, pl
 4. Calendar showing events on a live page
 
 == Changelog ==
+
+= 1.4.9 =
+* UPDATE: WordPress 6.7 compatibility checked
+* UPDATE: PHP 8. Compatibility checked
 
 = 1.4.8 =
 * NEW FEATURE: Each month to start from SUNDAY
