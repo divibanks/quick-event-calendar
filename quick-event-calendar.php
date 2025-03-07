@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Quick Event Calendar
-Plugin URI: https://wpcorner.co/quick-event-calendar/
+Plugin URI: https://lumumbas.blog
 Description: Quick Event Calendar is a very simple, performant and WordPress-integrated event calendar plugin. Quick Event Calendar allows you to add posts, events or any other custom post type to a flexible, responsive calendar which can be placed in a post, page or widget.
-Version: 1.4.8
-Author: WP Corner
-Author URI: https://wpcorner.co
+Version: 1.4.9
+Author: Patrick Lumumba
+Author URI: https://lumumbas.blog
 Text Domain: quick-event-calendar
 
 Copyright 2013-2024 WP Corner (email: plugins@wpcorner.co)
