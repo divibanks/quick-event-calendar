@@ -204,7 +204,7 @@ function qcc_calendar_admin_page() {
 
                     <h3>Support</h3>
                     <p>If you encounter any issues or have questions regarding Quick Event Calendar, please <a href="https://wordpress.org/support/plugin/quick-event-calendar/">visit the plugin's support forum</a> or <br>
-                    <a href="mailto:support@wpcorner.co">contact us</a> for assistance.</p>
+                    <a href="mailto:hello@lumumbas.blog">contact us</a> for assistance.</p>
                 <?php } ?>
             </div>
             <div class="qcc-admin-sidebar">
@@ -216,8 +216,8 @@ function qcc_calendar_admin_page() {
                 <div class="qcc-card">
                     <h3><?php _e('Need Help?', 'quick-event-calendar'); ?></h3>
                     <p><?php _e('Having issues or difficulties? Get help from the community on our support forum or contact us through our website contact form.', 'quick-event-calendar'); ?></p>
-                    <a href="https://wordpress.org/support/plugin/quick-event-calendar/" class="button button-secondary"><?php _e('Visit Support Forum', 'quick-event-calendar'); ?></a>
-                    <a href="https://wpcorner.co/contact" class="button button-secondary"><?php _e('Contact Support', 'quick-event-calendar'); ?></a>
+                    <a href="https://wordpress.org/support/plugin/quick-event-calendar/" class="button button-secondary"><?php _e('Support Forum', 'quick-event-calendar'); ?></a>
+                    <a href="https://divibanks.io/sponsor/" class="button button-secondary"><?php _e('Support Our Work', 'quick-event-calendar'); ?></a>
                 </div>
                 <div class="qcc-card">
                     <h3 class="mot"><?php _e('Motivate us!', 'quick-event-calendar'); ?></h3>
